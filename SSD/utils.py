@@ -62,8 +62,18 @@ def jaccard(box_a, box_b):
     return inter / union
 
 
-def match(default_boxes, ground_truths, threshold=0.5):
+def match(default_boxes, ground_truths, locs, threshold=0.5):
+    """
+    Matching Ground truth boxes and default boxes.
+    Args:
+        default_boxes: (tensor) default box sets
+        ground_truths: (tensor) ground truth boxes.
+        locs: (tensor) localization values.
+        threshold: (float) value of jaccard overlap threshold for matching
+    Return:
+        (tensor) matched boxes masks.
     """
     
-    """
+
+
     

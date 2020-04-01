@@ -30,7 +30,5 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(score.tolist(), [[0.1428571492433548, 0.25], [0.25, 0.0625]])
 
     def test_match(self):
-        # default_boxes = torch.Tensor(
-        #     []
-        # )
-        pass
+        default_boxes = [2, 1, 0.5]
+        
